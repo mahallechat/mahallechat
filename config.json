@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "issued_at": "2025-08-15T12:05:36.961468551Z",
+  "valid_from": "2025-08-15T12:05:36.961468551Z",
+  "valid_until": "2025-08-16T12:05:36.961468551Z",
+  "endpoints": [
+    {
+      "domain": "metrics-monitor.com",
+      "path": "/api/v2/metrics",
+      "uuid": "c01e77cb-1499-454c-7a0c-c8c03d41e2c4",
+      "weight": 100
+    }
+  ],
+  "bootstrap": {
+    "update_interval_hours": 24,
+    "retry_delay_seconds": 300,
+    "max_cache_hours": 72
+  },
+  "signature": "EdaDLzMh3PGxO27jTvhROJ+eC8OwODrYA2ftsJ+y9npEHy2L9Zmr+2sqvvyZsYr8+zyyrfGZDZUUrjeVHzZvCw=="
+}
