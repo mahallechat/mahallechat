@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "issued_at": "2025-08-15T12:05:36.961468551Z",
-  "valid_from": "2025-08-15T12:05:36.961468551Z",
-  "valid_until": "2025-08-16T12:05:36.961468551Z",
+  "issued_at": "2025-08-15T12:45:25.876840362Z",
+  "valid_from": "2025-08-15T12:45:25.876840362Z",
+  "valid_until": "2025-08-22T12:45:25.876840362Z",
   "endpoints": [
     {
       "domain": "metrics-monitor.com",
@@ -12,9 +12,9 @@
     }
   ],
   "bootstrap": {
-    "update_interval_hours": 24,
+    "update_interval_hours": 168,
     "retry_delay_seconds": 300,
-    "max_cache_hours": 72
+    "max_cache_hours": 336
   },
-  "signature": "EdaDLzMh3PGxO27jTvhROJ+eC8OwODrYA2ftsJ+y9npEHy2L9Zmr+2sqvvyZsYr8+zyyrfGZDZUUrjeVHzZvCw=="
+  "signature": "GCwgosVuYNk1W9HgMQUkUuIwIAoB/pcOtQf2WegBjQMYx42X3pszRyyLKIFR8vTtQMddvHi39TGg5eyxb4XtDw=="
 }
