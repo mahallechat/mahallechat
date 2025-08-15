@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MahalleChat - Anonymous Neighborhood Chat</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            color: #666;
+            font-size: 1.1em;
+        }
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+            border-left: 4px solid #007acc;
+        }
+        .config-box {
+            background: #f0f8ff;
+            border: 2px solid #007acc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .config-url {
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            background: #333;
+            color: #00ff00;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            word-break: break-all;
+            margin: 10px 0;
+        }
+        .download-section {
+            background: #e7f5e7;
+            border-color: #28a745;
+        }
+        .warning {
+            background: #fff3cd;
+            border-color: #ffc107;
+            color: #856404;
+        }
+        .instructions {
+            background: #d1ecf1;
+            border-color: #17a2b8;
+        }
+        .persian {
+            direction: rtl;
+            text-align: right;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+        .version-info {
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            border-top: 1px solid #eee;
+        }
+        .footer {
+            text-align: center;
+            color: #999;
+            font-size: 0.8em;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #007acc;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background 0.3s;
+            margin: 5px;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .btn-secondary {
+            background: #6c757d;
+        }
+        .btn-secondary:hover {
+            background: #545b62;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🏘️ MahalleChat</div>
+            <div class="tagline">Connect Anonymously with Your Neighborhood</div>
+        </div>
+
+        <div class="section config-box">
+            <h2>📱 Latest App Configuration</h2>
+            <p>This is the official configuration endpoint for the MahalleChat Android app.</p>
+            <div class="config-url">https://mahallechat.github.io/config.json</div>
+            <p><small>This URL is automatically checked by the app for updates</small></p>
+        </div>
+
+        <div class="section download-section">
+            <h2>📲 Download MahalleChat</h2>
+            <p>Get the latest version of the MahalleChat Android app:</p>
+            <a href="https://github.com/mahallechat/android/releases/latest" class="btn">
+                Download APK (Latest Release)
+            </a>
+            <p><small>Always verify SHA256 checksums before installing</small></p>
+        </div>
+
+        <div class="section instructions">
+            <h2>🔧 Manual Configuration</h2>
+            <p>If automatic updates aren't working, you can manually import the configuration:</p>
+            <ol>
+                <li>Open the MahalleChat app</li>
+                <li>Go to Settings → Configuration</li>
+                <li>Tap "Import Configuration"</li>
+                <li>Visit <a href="config.json" target="_blank">config.json</a></li>
+                <li>Copy the entire JSON content</li>
+                <li>Paste into the app and tap "Import"</li>
+            </ol>
+        </div>
+
+        <div class="section warning">
+            <h2>⚠️ Security Notice</h2>
+            <p><strong>Important:</strong></p>
+            <ul>
+                <li>Only download APK files from official GitHub releases</li>
+                <li>Always verify configuration signatures in the app</li>
+                <li>Report suspicious configurations to our Telegram channel</li>
+                <li>Use the latest version for security updates</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>📞 Support & Updates</h2>
+            <p>Stay connected with the MahalleChat community:</p>
+            <a href="https://t.me/mahallechat_updates" class="btn">
+                Join Telegram Channel
+            </a>
+            <a href="https://github.com/mahallechat" class="btn btn-secondary">
+                View Source Code
+            </a>
+            <p><small>The Telegram channel provides configuration updates and community support</small></p>
+        </div>
+
+        <div class="persian">
+            <h2>محله چت - چت محلی</h2>
+            <p>
+                محله چت یک پلتفرم چت محلی و ناشناس برای ارتباط با همسایگان شماست.
+                <br>
+                برای دریافت آخرین به‌روزرسانی‌ها و پشتیبانی به کانال تلگرام ما بپیوندید.
+                <br>
+                با همسایگان خود به صورت ناشناس در ارتباط باشید و از اجتماع محلی خود آگاه شوید.
+            </p>
+        </div>
+
+        <div class="version-info">
+            <p>
+                <strong>Config Version:</strong> Auto-updated daily<br>
+                <strong>Last Updated:</strong> <span id="last-updated">Loading...</span><br>
+                <strong>Signature:</strong> Ed25519 verified
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>
+                🔐 All configurations are cryptographically signed<br>
+                🌍 Built with privacy and security in mind<br>
+                🏘️ MahalleChat - Building Local Communities
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Try to fetch config info to show last updated time
+        fetch('config.json')
+            .then(response => response.json())
+            .then(config => {
+                if (config.issued_at) {
+                    const date = new Date(config.issued_at);
+                    document.getElementById('last-updated').textContent = 
+                        date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+                }
+            })
+            .catch(() => {
+                document.getElementById('last-updated').textContent = 'Check config.json';
+            });
+    </script>
+</body>
+</html>
